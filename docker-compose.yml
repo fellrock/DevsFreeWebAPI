@@ -1,0 +1,18 @@
+﻿version: '3.7'
+
+services:
+  devsfreewebapi:
+    image: devsfreewebapi
+    build:
+      context: .
+      dockerfile: DevsFreeWebAPI/Dockerfile
+    depends_on:
+      - db
+
+  db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: devsfreesenha
+      POSTGRES_DB: devsfree
+    ports:
+      - "5432:5432"
