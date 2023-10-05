@@ -29,22 +29,22 @@
         <Link>.dockerignore</Link>
       </Content>
       <Content Remove="Migrations\**" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Controller\" />
+      <Content Remove="Controller\**" />
     </ItemGroup>
 
     <ItemGroup>
       <Compile Remove="Migrations\**" />
+      <Compile Remove="Controller\**" />
     </ItemGroup>
 
     <ItemGroup>
       <EmbeddedResource Remove="Migrations\**" />
+      <EmbeddedResource Remove="Controller\**" />
     </ItemGroup>
 
     <ItemGroup>
       <None Remove="Migrations\**" />
+      <None Remove="Controller\**" />
     </ItemGroup>
 
 </Project>
