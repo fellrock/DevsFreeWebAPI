@@ -23,14 +23,14 @@ public class Partner
     [DisplayName("E-mail")]
     public string Email {get; set;} = string.Empty;
 
-    private string _telefone;
+    private string? _telefone;
     
     // USE THIS TO FRONT END PHONE DISPLAY:
     // var formattedNumber = phoneNumberUtil.Format(number, PhoneNumberFormat.INTERNATIONAL);
     
     [Required(ErrorMessage = "Informe o número de telefone para contato")]
     [DisplayName("Telefone")]
-    public string Telefone
+    public string? Telefone
     {
         get => _telefone;
         set
@@ -57,7 +57,7 @@ public class Partner
     
     [Required]
     [Cnpj(ErrorMessage = "Invalid CNPJ.")]
-    public string CNPJ { get; set; }
+    public string? Cnpj { get; set; }
     
     [Required(ErrorMessage = "Deixe uma mensagem")]
     [DisplayName("Mensagem")]

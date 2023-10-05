@@ -18,7 +18,7 @@ builder.Services.AddDbContext<DatabaseContext>(options => options.UseNpgsql(conn
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new() { Title = "Your API Name", Version = "v1" });
+    c.SwaggerDoc("v1", new() { Title = "WebAPI", Version = "v1" });
 });
 
 
@@ -33,7 +33,7 @@ if (builder.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Your API Name v1");
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Dev v1");
     });
 }
 
@@ -109,7 +109,7 @@ app.MapPut("/partners/{id}", async (DatabaseContext context, int id, Partner upd
     partner.Email = updatedPartner.Email;
     partner.Telefone = updatedPartner.Telefone;
     partner.Mensagem = updatedPartner.Mensagem;
-    partner.CNPJ = updatedPartner.CNPJ;
+    partner.Cnpj = updatedPartner.Cnpj;
 
     await context.SaveChangesAsync();
     return Results.NoContent();

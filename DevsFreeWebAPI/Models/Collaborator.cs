@@ -22,7 +22,7 @@ public class Collaborator
     [DisplayName("E-mail")]
     public string Email {get; set;} = string.Empty;
 
-    private string _telefone;
+    private string? _telefone;
     
     // USE THIS TO FRONT END PHONE DISPLAY:
     // var formattedNumber = phoneNumberUtil.Format(number, PhoneNumberFormat.INTERNATIONAL);
@@ -37,7 +37,7 @@ public class Collaborator
     
     [Required(ErrorMessage = "Informe o número de contato")]
     [DisplayName("Contato (Whatsapp)")]
-    public string Telefone
+    public string? Telefone
     {
         get => _telefone;
         set

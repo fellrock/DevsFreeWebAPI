@@ -5,9 +5,9 @@ using System.Linq;
 
 public class Cnpj : ValidationAttribute
 {
-    protected override ValidationResult IsValid(object value, ValidationContext validationContext)
+    protected override ValidationResult IsValid(object? value, ValidationContext validationContext)
     {
-        string cnpj = value as string;
+        string? cnpj = value as string;
         
         if (string.IsNullOrWhiteSpace(cnpj))
             return new ValidationResult("CNPJ is required.");
@@ -17,7 +17,7 @@ public class Cnpj : ValidationAttribute
         if (!IsValidCnpj(cnpj))
             return new ValidationResult("Invalid CNPJ.");
 
-        return ValidationResult.Success;
+        return ValidationResult.Success!;
     }
 
     private bool IsValidCnpj(string cnpj)

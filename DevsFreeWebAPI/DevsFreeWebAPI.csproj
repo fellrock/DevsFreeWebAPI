@@ -24,27 +24,4 @@
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Content Include="..\.dockerignore">
-        <Link>.dockerignore</Link>
-      </Content>
-      <Content Remove="Migrations\**" />
-      <Content Remove="Controller\**" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Compile Remove="Migrations\**" />
-      <Compile Remove="Controller\**" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <EmbeddedResource Remove="Migrations\**" />
-      <EmbeddedResource Remove="Controller\**" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <None Remove="Migrations\**" />
-      <None Remove="Controller\**" />
-    </ItemGroup>
-
 </Project>

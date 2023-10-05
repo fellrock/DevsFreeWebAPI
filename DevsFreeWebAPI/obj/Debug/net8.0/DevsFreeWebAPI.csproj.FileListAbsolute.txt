@@ -42,3 +42,4 @@
 /home/fellrock/RiderProjects/DevsFreeWebAPI/DevsFreeWebAPI/bin/Debug/net8.0/Npgsql.dll
 /home/fellrock/RiderProjects/DevsFreeWebAPI/DevsFreeWebAPI/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
 /home/fellrock/RiderProjects/DevsFreeWebAPI/DevsFreeWebAPI/bin/Debug/net8.0/System.CodeDom.dll
+/home/fellrock/RiderProjects/DevsFreeWebAPI/DevsFreeWebAPI/obj/Debug/net8.0/DevsFreeWebAPI.sourcelink.json
